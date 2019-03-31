@@ -1,0 +1,1805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F4F14CB51C640B1E002A2402 /* Examples */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F4F14CB61C640B1E002A2402 /* Build configuration list for PBXAggregateTarget "Examples" */;
+			buildPhases = (
+				F4F14CBA1C640B29002A2402 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Examples;
+			productName = Examples;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F4051D9F1C1B5AF900587F1F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F4051D9E1C1B5AF900587F1F /* Common.m */; };
+		F4051DA01C1B5AF900587F1F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F4051D9E1C1B5AF900587F1F /* Common.m */; };
+		F4051DA11C1B5AF900587F1F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F4051D9E1C1B5AF900587F1F /* Common.m */; };
+		F4051DA91C1C812600587F1F /* STReverseDNSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4051DA81C1C812600587F1F /* STReverseDNSTextField.m */; };
+		F40B227C1B28EFC7003C05ED /* platypus_clt in Copy ScriptExec and Command Line Tool */ = {isa = PBXBuildFile; fileRef = F4E1F6FC11F758FB007EE2E3 /* platypus_clt */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F40B227F1B28F37A003C05ED /* ScriptExec.app in Copy ScriptExec and Command Line Tool */ = {isa = PBXBuildFile; fileRef = F48B774111F7661C00351575 /* ScriptExec.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F41305111E521CBC00842EF2 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F41305101E521CBC00842EF2 /* Sparkle.framework */; };
+		F41305121E521D0800842EF2 /* Sparkle.framework in Copy Bundled Frameworks */ = {isa = PBXBuildFile; fileRef = F41305101E521CBC00842EF2 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F43142B01C03C742004EEF8C /* PlatypusScriptAnalyser.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B1EDE17935BBC007DA173 /* PlatypusScriptAnalyser.m */; };
+		F43142B11C03C749004EEF8C /* NSWorkspace+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D6F1B2E09280099D16E /* NSWorkspace+Additions.m */; };
+		F445EA7B14FAB93300DCCDB3 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = F445EA7A14FAB93300DCCDB3 /* dsa_pub.pem */; };
+		F44A77431C1882DA003CCA7A /* InstallCommandLineTool.sh in Resources */ = {isa = PBXBuildFile; fileRef = F44A77401C1882DA003CCA7A /* InstallCommandLineTool.sh */; };
+		F44A77441C1882DA003CCA7A /* UninstallCommandLineTool.sh in Resources */ = {isa = PBXBuildFile; fileRef = F44A77411C1882DA003CCA7A /* UninstallCommandLineTool.sh */; };
+		F44A77451C1882DA003CCA7A /* UninstallPlatypus.sh in Resources */ = {isa = PBXBuildFile; fileRef = F44A77421C1882DA003CCA7A /* UninstallPlatypus.sh */; };
+		F44A774D1C1887CC003CCA7A /* AppSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = F44A77481C1887CC003CCA7A /* AppSettings.plist */; };
+		F44A774F1C1887CC003CCA7A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F44A774A1C1887CC003CCA7A /* MainMenu.xib */; };
+		F44A77501C1887CC003CCA7A /* script in Resources */ = {isa = PBXBuildFile; fileRef = F44A774B1C1887CC003CCA7A /* script */; };
+		F44E001D1229868100CAC9C2 /* DefaultStatusMenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = F44E001C1229868100CAC9C2 /* DefaultStatusMenuIcon.png */; };
+		F44EFF0612296F3700CAC9C2 /* NSColor+HexTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F44EFF0512296F3700CAC9C2 /* NSColor+HexTools.m */; };
+		F44EFF36122971BE00CAC9C2 /* NSColor+HexTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F44EFF0512296F3700CAC9C2 /* NSColor+HexTools.m */; };
+		F45986BB1E68E24300261427 /* platypus.man.html in Resources */ = {isa = PBXBuildFile; fileRef = F4B155F71C1EF77D00E6E941 /* platypus.man.html */; };
+		F45B1EF21FF5597600A935D7 /* PlatypusAppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F471ED1D122DF096001F4761 /* PlatypusAppIcon.icns */; };
+		F45B1EFA1FF560D800A935D7 /* NoodleLineNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B1EF41FF560D800A935D7 /* NoodleLineNumberView.m */; };
+		F45B1EFB1FF560D800A935D7 /* NoodleLineNumberMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B1EF81FF560D800A935D7 /* NoodleLineNumberMarker.m */; };
+		F45B1EFC1FF560D800A935D7 /* NSTextView+JSDExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B1EF91FF560D800A935D7 /* NSTextView+JSDExtensions.m */; };
+		F45B1F021FF560FB00A935D7 /* IconFamily.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B1EFE1FF560FB00A935D7 /* IconFamily.m */; };
+		F45B1F031FF560FB00A935D7 /* NSString+CarbonFSRefCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B1EFF1FF560FB00A935D7 /* NSString+CarbonFSRefCreation.m */; };
+		F45B1F151FF5617500A935D7 /* Interpreter_Ksh.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F061FF5617400A935D7 /* Interpreter_Ksh.png */; };
+		F45B1F161FF5617500A935D7 /* Interpreter_Shell.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F071FF5617400A935D7 /* Interpreter_Shell.png */; };
+		F45B1F171FF5617500A935D7 /* Interpreter_PHP.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F081FF5617400A935D7 /* Interpreter_PHP.png */; };
+		F45B1F181FF5617500A935D7 /* Interpreter_AppleScript.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F091FF5617400A935D7 /* Interpreter_AppleScript.png */; };
+		F45B1F191FF5617500A935D7 /* Interpreter_Python.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F0A1FF5617400A935D7 /* Interpreter_Python.png */; };
+		F45B1F1A1FF5617500A935D7 /* Interpreter_Expect.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F0B1FF5617400A935D7 /* Interpreter_Expect.png */; };
+		F45B1F1B1FF5617500A935D7 /* Interpreter_Tcsh.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F0C1FF5617400A935D7 /* Interpreter_Tcsh.png */; };
+		F45B1F1C1FF5617500A935D7 /* Interpreter_Tcl.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F0D1FF5617400A935D7 /* Interpreter_Tcl.png */; };
+		F45B1F1D1FF5617500A935D7 /* Interpreter_Env.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F0E1FF5617400A935D7 /* Interpreter_Env.png */; };
+		F45B1F1E1FF5617500A935D7 /* Interpreter_Swift.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F0F1FF5617400A935D7 /* Interpreter_Swift.png */; };
+		F45B1F1F1FF5617500A935D7 /* Interpreter_Bash.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F101FF5617400A935D7 /* Interpreter_Bash.png */; };
+		F45B1F201FF5617500A935D7 /* Interpreter_Csh.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F111FF5617400A935D7 /* Interpreter_Csh.png */; };
+		F45B1F211FF5617500A935D7 /* Interpreter_Perl.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F121FF5617400A935D7 /* Interpreter_Perl.png */; };
+		F45B1F221FF5617500A935D7 /* Interpreter_Zsh.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F131FF5617400A935D7 /* Interpreter_Zsh.png */; };
+		F45B1F231FF5617500A935D7 /* Interpreter_Ruby.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F141FF5617400A935D7 /* Interpreter_Ruby.png */; };
+		F45B1F2B1FF5618000A935D7 /* InterfaceType_Status-Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F251FF5618000A935D7 /* InterfaceType_Status-Menu.png */; };
+		F45B1F2C1FF5618000A935D7 /* InterfaceType_Droplet.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F261FF5618000A935D7 /* InterfaceType_Droplet.png */; };
+		F45B1F2D1FF5618000A935D7 /* InterfaceType_Text-Window.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F271FF5618000A935D7 /* InterfaceType_Text-Window.png */; };
+		F45B1F2E1FF5618000A935D7 /* InterfaceType_Progress-Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F281FF5618000A935D7 /* InterfaceType_Progress-Bar.png */; };
+		F45B1F2F1FF5618000A935D7 /* InterfaceType_Web-View.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F291FF5618000A935D7 /* InterfaceType_Web-View.png */; };
+		F45B1F301FF5618000A935D7 /* InterfaceType_None.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B1F2A1FF5618000A935D7 /* InterfaceType_None.png */; };
+		F45B1F331FF561E700A935D7 /* NSTask+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B1F321FF561E700A935D7 /* NSTask+Description.m */; };
+		F45B1F341FF56AE500A935D7 /* NSTask+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = F45B1F321FF561E700A935D7 /* NSTask+Description.m */; };
+		F46A3C701E65E5A6007BA557 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46A3C6F1E65E5A6007BA557 /* Accelerate.framework */; };
+		F46EF85113C3F36900E4C0E4 /* Examples in Resources */ = {isa = PBXBuildFile; fileRef = F46EF84E13C3F36900E4C0E4 /* Examples */; };
+		F471ED22122DF2D6001F4761 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = F471ED21122DF2D6001F4761 /* Credits.html */; };
+		F48002CB121AF042003FB5B3 /* images in Resources */ = {isa = PBXBuildFile; fileRef = F48002BA121AF042003FB5B3 /* images */; };
+		F482697F1BCAE1EE00169D8B /* TypeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F482697E1BCAE1EE00169D8B /* TypeListController.m */; };
+		F48269831BCAF1D800169D8B /* UniformTypeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48269821BCAF1D800169D8B /* UniformTypeListController.m */; };
+		F48B1EE017935BBC007DA173 /* PlatypusScriptAnalyser.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B1EDE17935BBC007DA173 /* PlatypusScriptAnalyser.m */; };
+		F48B7B8111F7666600351575 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E1F47C11F756D9007EE2E3 /* Security.framework */; };
+		F48B7B8511F7667B00351575 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		F48B7B9511F766E600351575 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B7B9011F766E600351575 /* main.m */; };
+		F48B7B9611F766E600351575 /* ScriptExecController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B7B9211F766E600351575 /* ScriptExecController.m */; };
+		F48B7BAB11F7675900351575 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48B7BAA11F7675900351575 /* WebKit.framework */; };
+		F4975D701B2E09280099D16E /* NSWorkspace+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D6F1B2E09280099D16E /* NSWorkspace+Additions.m */; };
+		F4975D711B2E09280099D16E /* NSWorkspace+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D6F1B2E09280099D16E /* NSWorkspace+Additions.m */; };
+		F4975D741B2E09310099D16E /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D731B2E09310099D16E /* STPrivilegedTask.m */; };
+		F4975D751B2E09310099D16E /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D731B2E09310099D16E /* STPrivilegedTask.m */; };
+		F4975D791B2E09450099D16E /* STPathTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D771B2E09450099D16E /* STPathTextField.m */; };
+		F4975D8B1B2E71B80099D16E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D8A1B2E71B80099D16E /* main.m */; };
+		F4975DAA1B2E71EE0099D16E /* ArgsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D8D1B2E71EE0099D16E /* ArgsController.m */; };
+		F4975DAB1B2E71EE0099D16E /* BundledFilesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D8F1B2E71EE0099D16E /* BundledFilesController.m */; };
+		F4975DAC1B2E71EE0099D16E /* DropSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D911B2E71EE0099D16E /* DropSettingsController.m */; };
+		F4975DAD1B2E71EE0099D16E /* EditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D931B2E71EE0099D16E /* EditorController.m */; };
+		F4975DAE1B2E71EE0099D16E /* IconController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D951B2E71EE0099D16E /* IconController.m */; };
+		F4975DAF1B2E71EE0099D16E /* PlatypusWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D971B2E71EE0099D16E /* PlatypusWindowController.m */; };
+		F4975DB11B2E71EE0099D16E /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D9B1B2E71EE0099D16E /* PreferencesController.m */; };
+		F4975DB21B2E71EE0099D16E /* ProfilesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D9D1B2E71EE0099D16E /* ProfilesController.m */; };
+		F4975DB41B2E71EE0099D16E /* ShellCommandController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975DA11B2E71EE0099D16E /* ShellCommandController.m */; };
+		F4975DB51B2E71EE0099D16E /* StatusItemSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975DA31B2E71EE0099D16E /* StatusItemSettingsController.m */; };
+		F4975DB61B2E71EE0099D16E /* SuffixTypeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975DA51B2E71EE0099D16E /* SuffixTypeListController.m */; };
+		F4975DB71B2E71EE0099D16E /* SyntaxCheckerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975DA71B2E71EE0099D16E /* SyntaxCheckerController.m */; };
+		F4975DB81B2E71EE0099D16E /* TextSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975DA91B2E71EE0099D16E /* TextSettingsController.m */; };
+		F4975DBE1B2E71FC0099D16E /* Editor.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4975DB91B2E71FC0099D16E /* Editor.xib */; };
+		F4975DC01B2E71FC0099D16E /* Platypus.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4975DBB1B2E71FC0099D16E /* Platypus.xib */; };
+		F4975DC11B2E71FC0099D16E /* ShellCommandWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4975DBC1B2E71FC0099D16E /* ShellCommandWindow.xib */; };
+		F4975DC21B2E71FC0099D16E /* SyntaxChecker.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4975DBD1B2E71FC0099D16E /* SyntaxChecker.xib */; };
+		F4AB186B1BE182FA00B83A95 /* Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AB186A1BE182FA00B83A95 /* Alerts.m */; };
+		F4AB186C1BE182FA00B83A95 /* Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AB186A1BE182FA00B83A95 /* Alerts.m */; };
+		F4AB186F1BE1908100B83A95 /* NSBundle+Templates.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AB186E1BE1908100B83A95 /* NSBundle+Templates.m */; };
+		F4AB18721BE19CAC00B83A95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AB18711BE19CAC00B83A95 /* Foundation.framework */; };
+		F4AB18741BE19CD100B83A95 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AB18731BE19CD100B83A95 /* AppKit.framework */; };
+		F4AB189A1BED3A0B00B83A95 /* ScriptExecJob.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AB18991BED3A0B00B83A95 /* ScriptExecJob.m */; };
+		F4AB189D1BEFAF1900B83A95 /* PlatypusDefault.icns in Resources */ = {isa = PBXBuildFile; fileRef = F4AB189B1BEFAF1900B83A95 /* PlatypusDefault.icns */; };
+		F4AF785D14D1E5F200544C1B /* STDragWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AF785C14D1E5F200544C1B /* STDragWebView.m */; };
+		F4B6802B1E58B63900F788CD /* PlatypusScriptAnalyser.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B1EDE17935BBC007DA173 /* PlatypusScriptAnalyser.m */; };
+		F4BDABD70FD9A7CC00328FDD /* PlatypusScriptFile.icns in Resources */ = {isa = PBXBuildFile; fileRef = F4BDABD50FD9A7CC00328FDD /* PlatypusScriptFile.icns */; };
+		F4BDABD80FD9A7CC00328FDD /* PlatypusProfile.icns in Resources */ = {isa = PBXBuildFile; fileRef = F4BDABD60FD9A7CC00328FDD /* PlatypusProfile.icns */; };
+		F4C19A851BD1BFAB00F411BD /* STDragImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C19A841BD1BFAB00F411BD /* STDragImageView.m */; };
+		F4D0F2311C1DCEEE0065AD25 /* NSResponderNotifyingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D0F2301C1DCEEE0065AD25 /* NSResponderNotifyingTableView.m */; };
+		F4D581B81C449568005FA6AC /* platypus.1 in Resources */ = {isa = PBXBuildFile; fileRef = F4B155F61C1EF77D00E6E941 /* platypus.1 */; };
+		F4DC075211F629A40043764E /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = F4DC074F11F629A40043764E /* Documentation.html */; };
+		F4DC075311F629A40043764E /* Readme.html in Resources */ = {isa = PBXBuildFile; fileRef = F4DC075011F629A40043764E /* Readme.html */; };
+		F4E1F47D11F756D9007EE2E3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E1F47C11F756D9007EE2E3 /* Security.framework */; };
+		F4ECE5891E5F04A4008CC395 /* UriSchemesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ECE5881E5F04A4008CC395 /* UriSchemesListController.m */; };
+		F4F14CBC1C662A4D002A2402 /* make_examples.pl in Resources */ = {isa = PBXBuildFile; fileRef = F4F14CAF1C640857002A2402 /* make_examples.pl */; };
+		F4F2F3BA1BF96C5C00FE463C /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F2F3B91BF96C5C00FE463C /* VDKQueue.m */; };
+		F4FB338114FBFC7C00BAECEB /* License.html in Resources */ = {isa = PBXBuildFile; fileRef = F4FB338014FBFC7C00BAECEB /* License.html */; };
+		F4FE739911F792D5005FC23A /* PlatypusAppSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE739711F792D5005FC23A /* PlatypusAppSpec.m */; };
+		F4FE739A11F792D5005FC23A /* PlatypusAppSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE739711F792D5005FC23A /* PlatypusAppSpec.m */; };
+		F4FE747B11F79399005FC23A /* platypus_clt.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE747A11F79399005FC23A /* platypus_clt.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F40B22761B28D761003C05ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F48B774011F7661C00351575;
+			remoteInfo = ScriptExec;
+		};
+		F40B22781B28D763003C05ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4E1F6FB11F758FB007EE2E3;
+			remoteInfo = platypus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F40B227B1B28EFBE003C05ED /* Copy ScriptExec and Command Line Tool */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				F40B227F1B28F37A003C05ED /* ScriptExec.app in Copy ScriptExec and Command Line Tool */,
+				F40B227C1B28EFC7003C05ED /* platypus_clt in Copy ScriptExec and Command Line Tool */,
+			);
+			name = "Copy ScriptExec and Command Line Tool";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F445EA7814FAB63A00DCCDB3 /* Copy Bundled Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F41305121E521D0800842EF2 /* Sparkle.framework in Copy Bundled Frameworks */,
+			);
+			name = "Copy Bundled Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* Platypus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Platypus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4051D9E1C1B5AF900587F1F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		F4051DA71C1C812600587F1F /* STReverseDNSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STReverseDNSTextField.h; path = Shared/STReverseDNSTextField.h; sourceTree = "<group>"; };
+		F4051DA81C1C812600587F1F /* STReverseDNSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STReverseDNSTextField.m; path = Shared/STReverseDNSTextField.m; sourceTree = "<group>"; };
+		F41305101E521CBC00842EF2 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		F442E00B1EA38C7100BAD80C /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		F445EA7A14FAB93300DCCDB3 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Sparkle/dsa_pub.pem; sourceTree = "<group>"; };
+		F445EA7D14FABE6500DCCDB3 /* dsa_priv.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_priv.pem; sourceTree = "<group>"; };
+		F445EA7E14FABE6500DCCDB3 /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		F445EA8014FABE6500DCCDB3 /* PlatypusAppcast.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PlatypusAppcast.xml; sourceTree = "<group>"; };
+		F445EA8214FABE6500DCCDB3 /* sign_update.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = sign_update.rb; sourceTree = "<group>"; };
+		F445EA8314FABE6500DCCDB3 /* update_appcast.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_appcast.sh; sourceTree = "<group>"; };
+		F44A77401C1882DA003CCA7A /* InstallCommandLineTool.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = InstallCommandLineTool.sh; path = Application/Resources/InstallCommandLineTool.sh; sourceTree = "<group>"; };
+		F44A77411C1882DA003CCA7A /* UninstallCommandLineTool.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = UninstallCommandLineTool.sh; path = Application/Resources/UninstallCommandLineTool.sh; sourceTree = "<group>"; };
+		F44A77421C1882DA003CCA7A /* UninstallPlatypus.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = UninstallPlatypus.sh; path = Application/Resources/UninstallPlatypus.sh; sourceTree = "<group>"; };
+		F44A77481C1887CC003CCA7A /* AppSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppSettings.plist; sourceTree = "<group>"; };
+		F44A77491C1887CC003CCA7A /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		F44A774A1C1887CC003CCA7A /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		F44A774B1C1887CC003CCA7A /* script */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = script; sourceTree = "<group>"; };
+		F44A774C1C1887CC003CCA7A /* ScriptExec-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ScriptExec-Info.plist"; sourceTree = "<group>"; };
+		F44E001C1229868100CAC9C2 /* DefaultStatusMenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefaultStatusMenuIcon.png; sourceTree = "<group>"; };
+		F44EFF0412296F3700CAC9C2 /* NSColor+HexTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+HexTools.h"; path = "Shared/NSColor+HexTools.h"; sourceTree = "<group>"; };
+		F44EFF0512296F3700CAC9C2 /* NSColor+HexTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+HexTools.m"; path = "Shared/NSColor+HexTools.m"; sourceTree = "<group>"; };
+		F45B1EF41FF560D800A935D7 /* NoodleLineNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberView.m; sourceTree = "<group>"; };
+		F45B1EF51FF560D800A935D7 /* NSTextView+JSDExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextView+JSDExtensions.h"; sourceTree = "<group>"; };
+		F45B1EF61FF560D800A935D7 /* NoodleLineNumberMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberMarker.h; sourceTree = "<group>"; };
+		F45B1EF71FF560D800A935D7 /* NoodleLineNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoodleLineNumberView.h; sourceTree = "<group>"; };
+		F45B1EF81FF560D800A935D7 /* NoodleLineNumberMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoodleLineNumberMarker.m; sourceTree = "<group>"; };
+		F45B1EF91FF560D800A935D7 /* NSTextView+JSDExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextView+JSDExtensions.m"; sourceTree = "<group>"; };
+		F45B1EFE1FF560FB00A935D7 /* IconFamily.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconFamily.m; sourceTree = "<group>"; };
+		F45B1EFF1FF560FB00A935D7 /* NSString+CarbonFSRefCreation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CarbonFSRefCreation.m"; sourceTree = "<group>"; };
+		F45B1F001FF560FB00A935D7 /* IconFamily.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconFamily.h; sourceTree = "<group>"; };
+		F45B1F011FF560FB00A935D7 /* NSString+CarbonFSRefCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CarbonFSRefCreation.h"; sourceTree = "<group>"; };
+		F45B1F061FF5617400A935D7 /* Interpreter_Ksh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Ksh.png; sourceTree = "<group>"; };
+		F45B1F071FF5617400A935D7 /* Interpreter_Shell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Shell.png; sourceTree = "<group>"; };
+		F45B1F081FF5617400A935D7 /* Interpreter_PHP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_PHP.png; sourceTree = "<group>"; };
+		F45B1F091FF5617400A935D7 /* Interpreter_AppleScript.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_AppleScript.png; sourceTree = "<group>"; };
+		F45B1F0A1FF5617400A935D7 /* Interpreter_Python.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Python.png; sourceTree = "<group>"; };
+		F45B1F0B1FF5617400A935D7 /* Interpreter_Expect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Expect.png; sourceTree = "<group>"; };
+		F45B1F0C1FF5617400A935D7 /* Interpreter_Tcsh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Tcsh.png; sourceTree = "<group>"; };
+		F45B1F0D1FF5617400A935D7 /* Interpreter_Tcl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Tcl.png; sourceTree = "<group>"; };
+		F45B1F0E1FF5617400A935D7 /* Interpreter_Env.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Env.png; sourceTree = "<group>"; };
+		F45B1F0F1FF5617400A935D7 /* Interpreter_Swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Swift.png; sourceTree = "<group>"; };
+		F45B1F101FF5617400A935D7 /* Interpreter_Bash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Bash.png; sourceTree = "<group>"; };
+		F45B1F111FF5617400A935D7 /* Interpreter_Csh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Csh.png; sourceTree = "<group>"; };
+		F45B1F121FF5617400A935D7 /* Interpreter_Perl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Perl.png; sourceTree = "<group>"; };
+		F45B1F131FF5617400A935D7 /* Interpreter_Zsh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Zsh.png; sourceTree = "<group>"; };
+		F45B1F141FF5617400A935D7 /* Interpreter_Ruby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Ruby.png; sourceTree = "<group>"; };
+		F45B1F251FF5618000A935D7 /* InterfaceType_Status-Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InterfaceType_Status-Menu.png"; sourceTree = "<group>"; };
+		F45B1F261FF5618000A935D7 /* InterfaceType_Droplet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InterfaceType_Droplet.png; sourceTree = "<group>"; };
+		F45B1F271FF5618000A935D7 /* InterfaceType_Text-Window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InterfaceType_Text-Window.png"; sourceTree = "<group>"; };
+		F45B1F281FF5618000A935D7 /* InterfaceType_Progress-Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InterfaceType_Progress-Bar.png"; sourceTree = "<group>"; };
+		F45B1F291FF5618000A935D7 /* InterfaceType_Web-View.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "InterfaceType_Web-View.png"; sourceTree = "<group>"; };
+		F45B1F2A1FF5618000A935D7 /* InterfaceType_None.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InterfaceType_None.png; sourceTree = "<group>"; };
+		F45B1F311FF561E700A935D7 /* NSTask+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTask+Description.h"; path = "Shared/NSTask+Description.h"; sourceTree = "<group>"; };
+		F45B1F321FF561E700A935D7 /* NSTask+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTask+Description.m"; path = "Shared/NSTask+Description.m"; sourceTree = "<group>"; };
+		F46A3C6F1E65E5A6007BA557 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F46EF84E13C3F36900E4C0E4 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = "<group>"; };
+		F471ED1D122DF096001F4761 /* PlatypusAppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PlatypusAppIcon.icns; sourceTree = "<group>"; };
+		F471ED21122DF2D6001F4761 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = Credits.html; sourceTree = "<group>"; };
+		F48002BA121AF042003FB5B3 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		F482697D1BCAE1EE00169D8B /* TypeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeListController.h; path = Application/TypeListController.h; sourceTree = "<group>"; };
+		F482697E1BCAE1EE00169D8B /* TypeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TypeListController.m; path = Application/TypeListController.m; sourceTree = "<group>"; };
+		F48269811BCAF1D800169D8B /* UniformTypeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UniformTypeListController.h; path = Application/UniformTypeListController.h; sourceTree = "<group>"; };
+		F48269821BCAF1D800169D8B /* UniformTypeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UniformTypeListController.m; path = Application/UniformTypeListController.m; sourceTree = "<group>"; };
+		F4871B32178A117600DE54F3 /* update_docs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_docs.sh; sourceTree = "<group>"; };
+		F48B1EDD17935BBC007DA173 /* PlatypusScriptAnalyser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlatypusScriptAnalyser.h; path = Shared/PlatypusScriptAnalyser.h; sourceTree = "<group>"; };
+		F48B1EDE17935BBC007DA173 /* PlatypusScriptAnalyser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlatypusScriptAnalyser.m; path = Shared/PlatypusScriptAnalyser.m; sourceTree = "<group>"; };
+		F48B774111F7661C00351575 /* ScriptExec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptExec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48B7B9011F766E600351575 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = main.m; path = ScriptExec/main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		F48B7B9111F766E600351575 /* ScriptExecController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScriptExecController.h; path = ScriptExec/ScriptExecController.h; sourceTree = "<group>"; };
+		F48B7B9211F766E600351575 /* ScriptExecController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScriptExecController.m; path = ScriptExec/ScriptExecController.m; sourceTree = "<group>"; };
+		F48B7BAA11F7675900351575 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		F4975D6E1B2E09280099D16E /* NSWorkspace+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWorkspace+Additions.h"; path = "Shared/NSWorkspace+Additions.h"; sourceTree = "<group>"; };
+		F4975D6F1B2E09280099D16E /* NSWorkspace+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSWorkspace+Additions.m"; path = "Shared/NSWorkspace+Additions.m"; sourceTree = "<group>"; };
+		F4975D721B2E09310099D16E /* STPrivilegedTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STPrivilegedTask.h; path = Shared/STPrivilegedTask.h; sourceTree = "<group>"; };
+		F4975D731B2E09310099D16E /* STPrivilegedTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STPrivilegedTask.m; path = Shared/STPrivilegedTask.m; sourceTree = "<group>"; };
+		F4975D761B2E09450099D16E /* STPathTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STPathTextField.h; path = Shared/STPathTextField.h; sourceTree = "<group>"; };
+		F4975D771B2E09450099D16E /* STPathTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STPathTextField.m; path = Shared/STPathTextField.m; sourceTree = "<group>"; };
+		F4975D7A1B2E462A0099D16E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		F4975D8A1B2E71B80099D16E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Application/main.m; sourceTree = "<group>"; };
+		F4975D8C1B2E71EE0099D16E /* ArgsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArgsController.h; path = Application/ArgsController.h; sourceTree = "<group>"; };
+		F4975D8D1B2E71EE0099D16E /* ArgsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArgsController.m; path = Application/ArgsController.m; sourceTree = "<group>"; };
+		F4975D8E1B2E71EE0099D16E /* BundledFilesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BundledFilesController.h; path = Application/BundledFilesController.h; sourceTree = "<group>"; };
+		F4975D8F1B2E71EE0099D16E /* BundledFilesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BundledFilesController.m; path = Application/BundledFilesController.m; sourceTree = "<group>"; };
+		F4975D901B2E71EE0099D16E /* DropSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropSettingsController.h; path = Application/DropSettingsController.h; sourceTree = "<group>"; };
+		F4975D911B2E71EE0099D16E /* DropSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DropSettingsController.m; path = Application/DropSettingsController.m; sourceTree = "<group>"; };
+		F4975D921B2E71EE0099D16E /* EditorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditorController.h; path = Application/EditorController.h; sourceTree = "<group>"; };
+		F4975D931B2E71EE0099D16E /* EditorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditorController.m; path = Application/EditorController.m; sourceTree = "<group>"; };
+		F4975D941B2E71EE0099D16E /* IconController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IconController.h; path = Application/IconController.h; sourceTree = "<group>"; };
+		F4975D951B2E71EE0099D16E /* IconController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IconController.m; path = Application/IconController.m; sourceTree = "<group>"; };
+		F4975D961B2E71EE0099D16E /* PlatypusWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlatypusWindowController.h; path = Application/PlatypusWindowController.h; sourceTree = "<group>"; };
+		F4975D971B2E71EE0099D16E /* PlatypusWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlatypusWindowController.m; path = Application/PlatypusWindowController.m; sourceTree = "<group>"; };
+		F4975D9A1B2E71EE0099D16E /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferencesController.h; path = Application/PreferencesController.h; sourceTree = "<group>"; };
+		F4975D9B1B2E71EE0099D16E /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferencesController.m; path = Application/PreferencesController.m; sourceTree = "<group>"; };
+		F4975D9C1B2E71EE0099D16E /* ProfilesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfilesController.h; path = Application/ProfilesController.h; sourceTree = "<group>"; };
+		F4975D9D1B2E71EE0099D16E /* ProfilesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfilesController.m; path = Application/ProfilesController.m; sourceTree = "<group>"; };
+		F4975DA01B2E71EE0099D16E /* ShellCommandController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellCommandController.h; path = Application/ShellCommandController.h; sourceTree = "<group>"; };
+		F4975DA11B2E71EE0099D16E /* ShellCommandController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShellCommandController.m; path = Application/ShellCommandController.m; sourceTree = "<group>"; };
+		F4975DA21B2E71EE0099D16E /* StatusItemSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusItemSettingsController.h; path = Application/StatusItemSettingsController.h; sourceTree = "<group>"; };
+		F4975DA31B2E71EE0099D16E /* StatusItemSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusItemSettingsController.m; path = Application/StatusItemSettingsController.m; sourceTree = "<group>"; };
+		F4975DA41B2E71EE0099D16E /* SuffixTypeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuffixTypeListController.h; path = Application/SuffixTypeListController.h; sourceTree = "<group>"; };
+		F4975DA51B2E71EE0099D16E /* SuffixTypeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuffixTypeListController.m; path = Application/SuffixTypeListController.m; sourceTree = "<group>"; };
+		F4975DA61B2E71EE0099D16E /* SyntaxCheckerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SyntaxCheckerController.h; path = Application/SyntaxCheckerController.h; sourceTree = "<group>"; };
+		F4975DA71B2E71EE0099D16E /* SyntaxCheckerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SyntaxCheckerController.m; path = Application/SyntaxCheckerController.m; sourceTree = "<group>"; };
+		F4975DA81B2E71EE0099D16E /* TextSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextSettingsController.h; path = Application/TextSettingsController.h; sourceTree = "<group>"; };
+		F4975DA91B2E71EE0099D16E /* TextSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextSettingsController.m; path = Application/TextSettingsController.m; sourceTree = "<group>"; };
+		F4975DB91B2E71FC0099D16E /* Editor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Editor.xib; path = Application/Resources/Editor.xib; sourceTree = "<group>"; };
+		F4975DBA1B2E71FC0099D16E /* Platypus-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Platypus-Info.plist"; path = "Application/Resources/Platypus-Info.plist"; sourceTree = "<group>"; };
+		F4975DBB1B2E71FC0099D16E /* Platypus.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Platypus.xib; path = Application/Resources/Platypus.xib; sourceTree = "<group>"; };
+		F4975DBC1B2E71FC0099D16E /* ShellCommandWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShellCommandWindow.xib; path = Application/Resources/ShellCommandWindow.xib; sourceTree = "<group>"; };
+		F4975DBD1B2E71FC0099D16E /* SyntaxChecker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SyntaxChecker.xib; path = Application/Resources/SyntaxChecker.xib; sourceTree = "<group>"; };
+		F4A4338B0E04C962000523E7 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Common.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		F4AB18691BE182FA00B83A95 /* Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alerts.h; path = Shared/Alerts.h; sourceTree = "<group>"; };
+		F4AB186A1BE182FA00B83A95 /* Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alerts.m; path = Shared/Alerts.m; sourceTree = "<group>"; };
+		F4AB186D1BE1908100B83A95 /* NSBundle+Templates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+Templates.h"; path = "Shared/NSBundle+Templates.h"; sourceTree = "<group>"; };
+		F4AB186E1BE1908100B83A95 /* NSBundle+Templates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+Templates.m"; path = "Shared/NSBundle+Templates.m"; sourceTree = "<group>"; };
+		F4AB18711BE19CAC00B83A95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4AB18731BE19CD100B83A95 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F4AB18981BED3A0B00B83A95 /* ScriptExecJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScriptExecJob.h; path = ScriptExec/ScriptExecJob.h; sourceTree = "<group>"; };
+		F4AB18991BED3A0B00B83A95 /* ScriptExecJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScriptExecJob.m; path = ScriptExec/ScriptExecJob.m; sourceTree = "<group>"; };
+		F4AB189B1BEFAF1900B83A95 /* PlatypusDefault.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = PlatypusDefault.icns; path = Icons/PlatypusDefault.icns; sourceTree = SOURCE_ROOT; };
+		F4AF785B14D1E5F200544C1B /* STDragWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STDragWebView.h; path = Shared/STDragWebView.h; sourceTree = "<group>"; };
+		F4AF785C14D1E5F200544C1B /* STDragWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STDragWebView.m; path = Shared/STDragWebView.m; sourceTree = "<group>"; };
+		F4B155F11C1EF77D00E6E941 /* build_cat2html.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_cat2html.sh; sourceTree = "<group>"; };
+		F4B155F21C1EF77D00E6E941 /* cat2html */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = cat2html; sourceTree = "<group>"; };
+		F4B155F31C1EF77D00E6E941 /* cat2html.l */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.lex; path = cat2html.l; sourceTree = "<group>"; };
+		F4B155F41C1EF77D00E6E941 /* make_man_html.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = make_man_html.sh; sourceTree = "<group>"; };
+		F4B155F51C1EF77D00E6E941 /* make_man_pdf.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = make_man_pdf.sh; sourceTree = "<group>"; };
+		F4B155F61C1EF77D00E6E941 /* platypus.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = platypus.1; sourceTree = "<group>"; };
+		F4B155F71C1EF77D00E6E941 /* platypus.man.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = platypus.man.html; sourceTree = "<group>"; };
+		F4B87C191B3C997300F4B8BE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		F4B87C581B403A6E00F4B8BE /* build_release.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_release.sh; sourceTree = "<group>"; };
+		F4B87C591B403A6E00F4B8BE /* src_loc_stats.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = src_loc_stats.sh; sourceTree = "<group>"; };
+		F4BDABD50FD9A7CC00328FDD /* PlatypusScriptFile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PlatypusScriptFile.icns; sourceTree = "<group>"; };
+		F4BDABD60FD9A7CC00328FDD /* PlatypusProfile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PlatypusProfile.icns; sourceTree = "<group>"; };
+		F4C19A741BD1AB7300F411BD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F4C19A831BD1BFAB00F411BD /* STDragImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STDragImageView.h; path = Shared/STDragImageView.h; sourceTree = "<group>"; };
+		F4C19A841BD1BFAB00F411BD /* STDragImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STDragImageView.m; path = Shared/STDragImageView.m; sourceTree = "<group>"; };
+		F4CDF9CB1F02A22100579F14 /* update_online_manpage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = update_online_manpage.sh; sourceTree = "<group>"; };
+		F4D0F22F1C1DCEEE0065AD25 /* NSResponderNotifyingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSResponderNotifyingTableView.h; path = Shared/NSResponderNotifyingTableView.h; sourceTree = "<group>"; };
+		F4D0F2301C1DCEEE0065AD25 /* NSResponderNotifyingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSResponderNotifyingTableView.m; path = Shared/NSResponderNotifyingTableView.m; sourceTree = "<group>"; };
+		F4DC074F11F629A40043764E /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.html.documentation; path = Documentation.html; sourceTree = "<group>"; };
+		F4DC075011F629A40043764E /* Readme.html */ = {isa = PBXFileReference; fileEncoding = 5; lastKnownFileType = text.html.documentation; path = Readme.html; sourceTree = "<group>"; };
+		F4E1F47C11F756D9007EE2E3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		F4E1F6FC11F758FB007EE2E3 /* platypus_clt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = platypus_clt; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E5E4011EE2F22E0072EACE /* Documentation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Documentation.md; sourceTree = "<group>"; };
+		F4ECE1A011F7746A000DB012 /* CHANGES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES.txt; sourceTree = SOURCE_ROOT; };
+		F4ECE5871E5F04A4008CC395 /* UriSchemesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UriSchemesListController.h; path = Application/UriSchemesListController.h; sourceTree = "<group>"; };
+		F4ECE5881E5F04A4008CC395 /* UriSchemesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UriSchemesListController.m; path = Application/UriSchemesListController.m; sourceTree = "<group>"; };
+		F4F14CAF1C640857002A2402 /* make_examples.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = make_examples.pl; sourceTree = "<group>"; };
+		F4F2F3B81BF96C5C00FE463C /* VDKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VDKQueue.h; path = Shared/Others/VDKQueue/VDKQueue.h; sourceTree = "<group>"; };
+		F4F2F3B91BF96C5C00FE463C /* VDKQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VDKQueue.m; path = Shared/Others/VDKQueue/VDKQueue.m; sourceTree = "<group>"; };
+		F4FB338014FBFC7C00BAECEB /* License.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html.documentation; path = License.html; sourceTree = "<group>"; };
+		F4FE739611F792D5005FC23A /* PlatypusAppSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlatypusAppSpec.h; path = Shared/PlatypusAppSpec.h; sourceTree = "<group>"; };
+		F4FE739711F792D5005FC23A /* PlatypusAppSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlatypusAppSpec.m; path = Shared/PlatypusAppSpec.m; sourceTree = "<group>"; };
+		F4FE747A11F79399005FC23A /* platypus_clt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = platypus_clt.m; path = CommandLineTool/platypus_clt.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F46A3C701E65E5A6007BA557 /* Accelerate.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				F4E1F47D11F756D9007EE2E3 /* Security.framework in Frameworks */,
+				F41305111E521CBC00842EF2 /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48B773F11F7661C00351575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48B7B8111F7666600351575 /* Security.framework in Frameworks */,
+				F48B7B8511F7667B00351575 /* Cocoa.framework in Frameworks */,
+				F48B7BAB11F7675900351575 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E1F6FA11F758FB007EE2E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AB18741BE19CD100B83A95 /* AppKit.framework in Frameworks */,
+				F4AB18721BE19CAC00B83A95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F45B1EFD1FF560FB00A935D7 /* IconFamily */,
+				F45B1F041FF5610000A935D7 /* NSTask+Description */,
+				F45B1EF31FF560D800A935D7 /* NSTextView+JSDExtensions */,
+				F4D0F2321C1DCF790065AD25 /* NSResponderNotifyingTableView */,
+				F4051DAA1C1C816100587F1F /* STReverseDNSTextField */,
+				F4AB18701BE1911500B83A95 /* NSBundle+Templates */,
+				F4C19A821BD1BF7400F411BD /* STDragImageView */,
+				F48269871BCB1EAF00169D8B /* VDKQueue */,
+				F4ECE17511F76CC2000DB012 /* PlatypusAppSpec */,
+				F48A724D122E23B200964D71 /* PlatypusScriptAnalyser */,
+				F4AF785E14D1E5F600544C1B /* STDragWebView */,
+				F4B5DE431491A00900C43901 /* Alerts */,
+				F41306340FBD809A00A319B7 /* STPathTextField */,
+				F44587170FC386B500CD0C02 /* STPrivilegedTask */,
+				F4975D6D1B2E03250099D16E /* NSWorkspace+Additions */,
+				F44EFEFF12296F2C00CAC9C2 /* NSColor+HexTools */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F48B774111F7661C00351575 /* ScriptExec.app */,
+				F4E1F6FC11F758FB007EE2E3 /* platypus_clt */,
+				8D1107320486CEB800E47090 /* Platypus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Platypus */ = {
+			isa = PBXGroup;
+			children = (
+				F4975D7A1B2E462A0099D16E /* README.md */,
+				F4ECE1A011F7746A000DB012 /* CHANGES.txt */,
+				F442E00B1EA38C7100BAD80C /* LICENSE.txt */,
+				F4F14CBB1C64264D002A2402 /* Scripts */,
+				F4DC074D11F629A40043764E /* Documentation */,
+				F4C19A741BD1AB7300F411BD /* PrefixHeader.pch */,
+				F4A4338B0E04C962000523E7 /* Common.h */,
+				F4051D9E1C1B5AF900587F1F /* Common.m */,
+				F48B7CB611F76B0C00351575 /* Platypus App */,
+				F48B7B8811F766CA00351575 /* ScriptExec */,
+				F4E1F70711F75A40007EE2E3 /* Command Line Tool */,
+				080E96DDFE201D6D7F000001 /* Shared */,
+				F445EA7C14FABE6500DCCDB3 /* Sparkle */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Platypus;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4975DBA1B2E71FC0099D16E /* Platypus-Info.plist */,
+				F4975DB91B2E71FC0099D16E /* Editor.xib */,
+				F4975DBB1B2E71FC0099D16E /* Platypus.xib */,
+				F4975DBC1B2E71FC0099D16E /* ShellCommandWindow.xib */,
+				F4975DBD1B2E71FC0099D16E /* SyntaxChecker.xib */,
+				F445EA7A14FAB93300DCCDB3 /* dsa_pub.pem */,
+				F46EF84E13C3F36900E4C0E4 /* Examples */,
+				F44A77461C1882E0003CCA7A /* Scripts */,
+				F4050E3305DAF44F00BE4CA5 /* Icons */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4AB18751BE19DB900B83A95 /* System */,
+				F4AB18761BE19DBF00B83A95 /* Others */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4050E3305DAF44F00BE4CA5 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F45B1F241FF5618000A935D7 /* InterfaceTypeIcons */,
+				F45B1F051FF5617400A935D7 /* Interpreters */,
+				F44E007212298B7A00CAC9C2 /* Application */,
+				F43142B21C03F9E2004EEF8C /* Documents */,
+				F44E007312298B8C00CAC9C2 /* Status Menu */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		F4051DAA1C1C816100587F1F /* STReverseDNSTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F4051DA71C1C812600587F1F /* STReverseDNSTextField.h */,
+				F4051DA81C1C812600587F1F /* STReverseDNSTextField.m */,
+			);
+			name = STReverseDNSTextField;
+			sourceTree = "<group>";
+		};
+		F41306340FBD809A00A319B7 /* STPathTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F4975D761B2E09450099D16E /* STPathTextField.h */,
+				F4975D771B2E09450099D16E /* STPathTextField.m */,
+			);
+			name = STPathTextField;
+			sourceTree = "<group>";
+		};
+		F43142B21C03F9E2004EEF8C /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				F4BDABD50FD9A7CC00328FDD /* PlatypusScriptFile.icns */,
+				F4BDABD60FD9A7CC00328FDD /* PlatypusProfile.icns */,
+			);
+			name = Documents;
+			sourceTree = "<group>";
+		};
+		F44587170FC386B500CD0C02 /* STPrivilegedTask */ = {
+			isa = PBXGroup;
+			children = (
+				F4975D721B2E09310099D16E /* STPrivilegedTask.h */,
+				F4975D731B2E09310099D16E /* STPrivilegedTask.m */,
+			);
+			name = STPrivilegedTask;
+			sourceTree = "<group>";
+		};
+		F445EA7C14FABE6500DCCDB3 /* Sparkle */ = {
+			isa = PBXGroup;
+			children = (
+				F445EA7D14FABE6500DCCDB3 /* dsa_priv.pem */,
+				F445EA7E14FABE6500DCCDB3 /* dsa_pub.pem */,
+				F445EA8214FABE6500DCCDB3 /* sign_update.rb */,
+				F445EA8314FABE6500DCCDB3 /* update_appcast.sh */,
+				F445EA8014FABE6500DCCDB3 /* PlatypusAppcast.xml */,
+			);
+			path = Sparkle;
+			sourceTree = "<group>";
+		};
+		F44A77461C1882E0003CCA7A /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				F44A77401C1882DA003CCA7A /* InstallCommandLineTool.sh */,
+				F44A77411C1882DA003CCA7A /* UninstallCommandLineTool.sh */,
+				F44A77421C1882DA003CCA7A /* UninstallPlatypus.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		F44A77471C1887CC003CCA7A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F44A774C1C1887CC003CCA7A /* ScriptExec-Info.plist */,
+				F44A77481C1887CC003CCA7A /* AppSettings.plist */,
+				F44A774B1C1887CC003CCA7A /* script */,
+				F44A774A1C1887CC003CCA7A /* MainMenu.xib */,
+				F44A77491C1887CC003CCA7A /* image.png */,
+			);
+			name = Resources;
+			path = ScriptExec/Resources;
+			sourceTree = "<group>";
+		};
+		F44E007212298B7A00CAC9C2 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F471ED1D122DF096001F4761 /* PlatypusAppIcon.icns */,
+				F4AB189B1BEFAF1900B83A95 /* PlatypusDefault.icns */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		F44E007312298B8C00CAC9C2 /* Status Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F44E001C1229868100CAC9C2 /* DefaultStatusMenuIcon.png */,
+			);
+			name = "Status Menu";
+			sourceTree = "<group>";
+		};
+		F44EFEFF12296F2C00CAC9C2 /* NSColor+HexTools */ = {
+			isa = PBXGroup;
+			children = (
+				F44EFF0412296F3700CAC9C2 /* NSColor+HexTools.h */,
+				F44EFF0512296F3700CAC9C2 /* NSColor+HexTools.m */,
+			);
+			name = "NSColor+HexTools";
+			sourceTree = "<group>";
+		};
+		F45B1EF31FF560D800A935D7 /* NSTextView+JSDExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				F45B1EF51FF560D800A935D7 /* NSTextView+JSDExtensions.h */,
+				F45B1EF91FF560D800A935D7 /* NSTextView+JSDExtensions.m */,
+				F45B1EF61FF560D800A935D7 /* NoodleLineNumberMarker.h */,
+				F45B1EF41FF560D800A935D7 /* NoodleLineNumberView.m */,
+				F45B1EF71FF560D800A935D7 /* NoodleLineNumberView.h */,
+				F45B1EF81FF560D800A935D7 /* NoodleLineNumberMarker.m */,
+			);
+			name = "NSTextView+JSDExtensions";
+			path = "Shared/Others/NSTextView+JSDExtensions";
+			sourceTree = "<group>";
+		};
+		F45B1EFD1FF560FB00A935D7 /* IconFamily */ = {
+			isa = PBXGroup;
+			children = (
+				F45B1F001FF560FB00A935D7 /* IconFamily.h */,
+				F45B1EFE1FF560FB00A935D7 /* IconFamily.m */,
+				F45B1F011FF560FB00A935D7 /* NSString+CarbonFSRefCreation.h */,
+				F45B1EFF1FF560FB00A935D7 /* NSString+CarbonFSRefCreation.m */,
+			);
+			name = IconFamily;
+			path = Shared/Others/IconFamily;
+			sourceTree = "<group>";
+		};
+		F45B1F041FF5610000A935D7 /* NSTask+Description */ = {
+			isa = PBXGroup;
+			children = (
+				F45B1F311FF561E700A935D7 /* NSTask+Description.h */,
+				F45B1F321FF561E700A935D7 /* NSTask+Description.m */,
+			);
+			name = "NSTask+Description";
+			sourceTree = "<group>";
+		};
+		F45B1F051FF5617400A935D7 /* Interpreters */ = {
+			isa = PBXGroup;
+			children = (
+				F45B1F061FF5617400A935D7 /* Interpreter_Ksh.png */,
+				F45B1F071FF5617400A935D7 /* Interpreter_Shell.png */,
+				F45B1F081FF5617400A935D7 /* Interpreter_PHP.png */,
+				F45B1F091FF5617400A935D7 /* Interpreter_AppleScript.png */,
+				F45B1F0A1FF5617400A935D7 /* Interpreter_Python.png */,
+				F45B1F0B1FF5617400A935D7 /* Interpreter_Expect.png */,
+				F45B1F0C1FF5617400A935D7 /* Interpreter_Tcsh.png */,
+				F45B1F0D1FF5617400A935D7 /* Interpreter_Tcl.png */,
+				F45B1F0E1FF5617400A935D7 /* Interpreter_Env.png */,
+				F45B1F0F1FF5617400A935D7 /* Interpreter_Swift.png */,
+				F45B1F101FF5617400A935D7 /* Interpreter_Bash.png */,
+				F45B1F111FF5617400A935D7 /* Interpreter_Csh.png */,
+				F45B1F121FF5617400A935D7 /* Interpreter_Perl.png */,
+				F45B1F131FF5617400A935D7 /* Interpreter_Zsh.png */,
+				F45B1F141FF5617400A935D7 /* Interpreter_Ruby.png */,
+			);
+			path = Interpreters;
+			sourceTree = "<group>";
+		};
+		F45B1F241FF5618000A935D7 /* InterfaceTypeIcons */ = {
+			isa = PBXGroup;
+			children = (
+				F45B1F251FF5618000A935D7 /* InterfaceType_Status-Menu.png */,
+				F45B1F261FF5618000A935D7 /* InterfaceType_Droplet.png */,
+				F45B1F271FF5618000A935D7 /* InterfaceType_Text-Window.png */,
+				F45B1F281FF5618000A935D7 /* InterfaceType_Progress-Bar.png */,
+				F45B1F291FF5618000A935D7 /* InterfaceType_Web-View.png */,
+				F45B1F2A1FF5618000A935D7 /* InterfaceType_None.png */,
+			);
+			path = InterfaceTypeIcons;
+			sourceTree = "<group>";
+		};
+		F48269801BCAE7FA00169D8B /* Drop Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F4975D901B2E71EE0099D16E /* DropSettingsController.h */,
+				F4975D911B2E71EE0099D16E /* DropSettingsController.m */,
+				F482697D1BCAE1EE00169D8B /* TypeListController.h */,
+				F482697E1BCAE1EE00169D8B /* TypeListController.m */,
+				F4975DA41B2E71EE0099D16E /* SuffixTypeListController.h */,
+				F4975DA51B2E71EE0099D16E /* SuffixTypeListController.m */,
+				F48269811BCAF1D800169D8B /* UniformTypeListController.h */,
+				F48269821BCAF1D800169D8B /* UniformTypeListController.m */,
+				F4ECE5871E5F04A4008CC395 /* UriSchemesListController.h */,
+				F4ECE5881E5F04A4008CC395 /* UriSchemesListController.m */,
+			);
+			name = "Drop Settings";
+			sourceTree = "<group>";
+		};
+		F48269871BCB1EAF00169D8B /* VDKQueue */ = {
+			isa = PBXGroup;
+			children = (
+				F4F2F3B81BF96C5C00FE463C /* VDKQueue.h */,
+				F4F2F3B91BF96C5C00FE463C /* VDKQueue.m */,
+			);
+			name = VDKQueue;
+			sourceTree = "<group>";
+		};
+		F48A724D122E23B200964D71 /* PlatypusScriptAnalyser */ = {
+			isa = PBXGroup;
+			children = (
+				F48B1EDD17935BBC007DA173 /* PlatypusScriptAnalyser.h */,
+				F48B1EDE17935BBC007DA173 /* PlatypusScriptAnalyser.m */,
+			);
+			name = PlatypusScriptAnalyser;
+			sourceTree = "<group>";
+		};
+		F48B7B8811F766CA00351575 /* ScriptExec */ = {
+			isa = PBXGroup;
+			children = (
+				F48B7B9011F766E600351575 /* main.m */,
+				F48B7B9111F766E600351575 /* ScriptExecController.h */,
+				F48B7B9211F766E600351575 /* ScriptExecController.m */,
+				F4AB18981BED3A0B00B83A95 /* ScriptExecJob.h */,
+				F4AB18991BED3A0B00B83A95 /* ScriptExecJob.m */,
+				F44A77471C1887CC003CCA7A /* Resources */,
+			);
+			name = ScriptExec;
+			sourceTree = "<group>";
+		};
+		F48B7CB611F76B0C00351575 /* Platypus App */ = {
+			isa = PBXGroup;
+			children = (
+				F4975D8A1B2E71B80099D16E /* main.m */,
+				F4975D961B2E71EE0099D16E /* PlatypusWindowController.h */,
+				F4975D971B2E71EE0099D16E /* PlatypusWindowController.m */,
+				F4975D941B2E71EE0099D16E /* IconController.h */,
+				F4975D951B2E71EE0099D16E /* IconController.m */,
+				F4975D8C1B2E71EE0099D16E /* ArgsController.h */,
+				F4975D8D1B2E71EE0099D16E /* ArgsController.m */,
+				F4975DA81B2E71EE0099D16E /* TextSettingsController.h */,
+				F4975DA91B2E71EE0099D16E /* TextSettingsController.m */,
+				F4975DA21B2E71EE0099D16E /* StatusItemSettingsController.h */,
+				F4975DA31B2E71EE0099D16E /* StatusItemSettingsController.m */,
+				F4975D8E1B2E71EE0099D16E /* BundledFilesController.h */,
+				F4975D8F1B2E71EE0099D16E /* BundledFilesController.m */,
+				F48269801BCAE7FA00169D8B /* Drop Settings */,
+				F4975DA61B2E71EE0099D16E /* SyntaxCheckerController.h */,
+				F4975DA71B2E71EE0099D16E /* SyntaxCheckerController.m */,
+				F4975DA01B2E71EE0099D16E /* ShellCommandController.h */,
+				F4975DA11B2E71EE0099D16E /* ShellCommandController.m */,
+				F4975D921B2E71EE0099D16E /* EditorController.h */,
+				F4975D931B2E71EE0099D16E /* EditorController.m */,
+				F4975D9A1B2E71EE0099D16E /* PreferencesController.h */,
+				F4975D9B1B2E71EE0099D16E /* PreferencesController.m */,
+				F4975D9C1B2E71EE0099D16E /* ProfilesController.h */,
+				F4975D9D1B2E71EE0099D16E /* ProfilesController.m */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+			);
+			name = "Platypus App";
+			sourceTree = "<group>";
+		};
+		F4975D6D1B2E03250099D16E /* NSWorkspace+Additions */ = {
+			isa = PBXGroup;
+			children = (
+				F4975D6E1B2E09280099D16E /* NSWorkspace+Additions.h */,
+				F4975D6F1B2E09280099D16E /* NSWorkspace+Additions.m */,
+			);
+			name = "NSWorkspace+Additions";
+			sourceTree = "<group>";
+		};
+		F4AB18701BE1911500B83A95 /* NSBundle+Templates */ = {
+			isa = PBXGroup;
+			children = (
+				F4AB186D1BE1908100B83A95 /* NSBundle+Templates.h */,
+				F4AB186E1BE1908100B83A95 /* NSBundle+Templates.m */,
+			);
+			name = "NSBundle+Templates";
+			sourceTree = "<group>";
+		};
+		F4AB18751BE19DB900B83A95 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F46A3C6F1E65E5A6007BA557 /* Accelerate.framework */,
+				F4AB18731BE19CD100B83A95 /* AppKit.framework */,
+				F4AB18711BE19CAC00B83A95 /* Foundation.framework */,
+				F4B87C191B3C997300F4B8BE /* Accelerate.framework */,
+				F48B7BAA11F7675900351575 /* WebKit.framework */,
+				F4E1F47C11F756D9007EE2E3 /* Security.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		F4AB18761BE19DBF00B83A95 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F41305101E521CBC00842EF2 /* Sparkle.framework */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		F4AF785E14D1E5F600544C1B /* STDragWebView */ = {
+			isa = PBXGroup;
+			children = (
+				F4AF785B14D1E5F200544C1B /* STDragWebView.h */,
+				F4AF785C14D1E5F200544C1B /* STDragWebView.m */,
+			);
+			name = STDragWebView;
+			sourceTree = "<group>";
+		};
+		F4B155EE1C1EF77D00E6E941 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				F4B155F01C1EF77D00E6E941 /* cat2html */,
+				F4B155F41C1EF77D00E6E941 /* make_man_html.sh */,
+				F4B155F51C1EF77D00E6E941 /* make_man_pdf.sh */,
+				F4B155F61C1EF77D00E6E941 /* platypus.1 */,
+				F4B155F71C1EF77D00E6E941 /* platypus.man.html */,
+				F4CDF9CB1F02A22100579F14 /* update_online_manpage.sh */,
+			);
+			name = man;
+			path = CommandLineTool/man;
+			sourceTree = "<group>";
+		};
+		F4B155F01C1EF77D00E6E941 /* cat2html */ = {
+			isa = PBXGroup;
+			children = (
+				F4B155F11C1EF77D00E6E941 /* build_cat2html.sh */,
+				F4B155F21C1EF77D00E6E941 /* cat2html */,
+				F4B155F31C1EF77D00E6E941 /* cat2html.l */,
+			);
+			path = cat2html;
+			sourceTree = "<group>";
+		};
+		F4B5DE431491A00900C43901 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				F4AB18691BE182FA00B83A95 /* Alerts.h */,
+				F4AB186A1BE182FA00B83A95 /* Alerts.m */,
+			);
+			name = Alerts;
+			sourceTree = "<group>";
+		};
+		F4C19A821BD1BF7400F411BD /* STDragImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F4C19A831BD1BFAB00F411BD /* STDragImageView.h */,
+				F4C19A841BD1BFAB00F411BD /* STDragImageView.m */,
+			);
+			name = STDragImageView;
+			sourceTree = "<group>";
+		};
+		F4D0F2321C1DCF790065AD25 /* NSResponderNotifyingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F4D0F22F1C1DCEEE0065AD25 /* NSResponderNotifyingTableView.h */,
+				F4D0F2301C1DCEEE0065AD25 /* NSResponderNotifyingTableView.m */,
+			);
+			name = NSResponderNotifyingTableView;
+			sourceTree = "<group>";
+		};
+		F4DC074D11F629A40043764E /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				F471ED21122DF2D6001F4761 /* Credits.html */,
+				F4DC074F11F629A40043764E /* Documentation.html */,
+				F4E5E4011EE2F22E0072EACE /* Documentation.md */,
+				F48002BA121AF042003FB5B3 /* images */,
+				F4DC075011F629A40043764E /* Readme.html */,
+				F4FB338014FBFC7C00BAECEB /* License.html */,
+				F4871B32178A117600DE54F3 /* update_docs.sh */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		F4E1F70711F75A40007EE2E3 /* Command Line Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE747A11F79399005FC23A /* platypus_clt.m */,
+				F4B155EE1C1EF77D00E6E941 /* man */,
+			);
+			name = "Command Line Tool";
+			sourceTree = "<group>";
+		};
+		F4ECE17511F76CC2000DB012 /* PlatypusAppSpec */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE739611F792D5005FC23A /* PlatypusAppSpec.h */,
+				F4FE739711F792D5005FC23A /* PlatypusAppSpec.m */,
+			);
+			name = PlatypusAppSpec;
+			sourceTree = "<group>";
+		};
+		F4F14CBB1C64264D002A2402 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				F4B87C581B403A6E00F4B8BE /* build_release.sh */,
+				F4F14CAF1C640857002A2402 /* make_examples.pl */,
+				F4B87C591B403A6E00F4B8BE /* src_loc_stats.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Platypus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F41B217D085CD8FF00B63B0D /* Build configuration list for PBXNativeTarget "Platypus" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				F445EA7814FAB63A00DCCDB3 /* Copy Bundled Frameworks */,
+				F40B227B1B28EFBE003C05ED /* Copy ScriptExec and Command Line Tool */,
+				F40B227E1B28F331003C05ED /* Run Script To Extract ScriptExec binary from ScriptExec Application Bundle */,
+				F42622251C03B0DD0052BA33 /* Run Script To Set CFBundleVersion to Build Number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F40B22791B28D763003C05ED /* PBXTargetDependency */,
+				F40B22771B28D761003C05ED /* PBXTargetDependency */,
+			);
+			name = Platypus;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Platypus;
+			productReference = 8D1107320486CEB800E47090 /* Platypus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F48B774011F7661C00351575 /* ScriptExec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F48B774711F7661D00351575 /* Build configuration list for PBXNativeTarget "ScriptExec" */;
+			buildPhases = (
+				F48B773D11F7661C00351575 /* Resources */,
+				F48B773E11F7661C00351575 /* Sources */,
+				F48B773F11F7661C00351575 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScriptExec;
+			productName = ScriptExec;
+			productReference = F48B774111F7661C00351575 /* ScriptExec.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4E1F6FB11F758FB007EE2E3 /* platypus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4E1F70611F75921007EE2E3 /* Build configuration list for PBXNativeTarget "platypus" */;
+			buildPhases = (
+				F4E1F6F911F758FB007EE2E3 /* Sources */,
+				F4E1F6FA11F758FB007EE2E3 /* Frameworks */,
+				F4FB337514FBDAD500BAECEB /* Run Script to Create Man Page HTML document */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = platypus;
+			productName = platypus;
+			productReference = F4E1F6FC11F758FB007EE2E3 /* platypus_clt */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Sveinbjorn Thordarson";
+				TargetAttributes = {
+					8D1107260486CEB800E47090 = {
+						DevelopmentTeam = 5WX26Y89JP;
+						ProvisioningStyle = Manual;
+					};
+					F48B774011F7661C00351575 = {
+						DevelopmentTeam = 5WX26Y89JP;
+						ProvisioningStyle = Manual;
+					};
+					F4E1F6FB11F758FB007EE2E3 = {
+						ProvisioningStyle = Manual;
+					};
+					F4F14CB51C640B1E002A2402 = {
+						CreatedOnToolsVersion = 7.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = F41B2181085CD8FF00B63B0D /* Build configuration list for PBXProject "Platypus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Platypus */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Platypus */,
+				F48B774011F7661C00351575 /* ScriptExec */,
+				F4E1F6FB11F758FB007EE2E3 /* platypus */,
+				F4F14CB51C640B1E002A2402 /* Examples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45B1F1C1FF5617500A935D7 /* Interpreter_Tcl.png in Resources */,
+				F4BDABD70FD9A7CC00328FDD /* PlatypusScriptFile.icns in Resources */,
+				F4BDABD80FD9A7CC00328FDD /* PlatypusProfile.icns in Resources */,
+				F4AB189D1BEFAF1900B83A95 /* PlatypusDefault.icns in Resources */,
+				F4DC075211F629A40043764E /* Documentation.html in Resources */,
+				F44A77451C1882DA003CCA7A /* UninstallPlatypus.sh in Resources */,
+				F45B1F1E1FF5617500A935D7 /* Interpreter_Swift.png in Resources */,
+				F45B1F2C1FF5618000A935D7 /* InterfaceType_Droplet.png in Resources */,
+				F45B1F151FF5617500A935D7 /* Interpreter_Ksh.png in Resources */,
+				F45B1F181FF5617500A935D7 /* Interpreter_AppleScript.png in Resources */,
+				F45B1F211FF5617500A935D7 /* Interpreter_Perl.png in Resources */,
+				F4DC075311F629A40043764E /* Readme.html in Resources */,
+				F44A77431C1882DA003CCA7A /* InstallCommandLineTool.sh in Resources */,
+				F45B1F171FF5617500A935D7 /* Interpreter_PHP.png in Resources */,
+				F48002CB121AF042003FB5B3 /* images in Resources */,
+				F45986BB1E68E24300261427 /* platypus.man.html in Resources */,
+				F44E001D1229868100CAC9C2 /* DefaultStatusMenuIcon.png in Resources */,
+				F45B1EF21FF5597600A935D7 /* PlatypusAppIcon.icns in Resources */,
+				F45B1F2E1FF5618000A935D7 /* InterfaceType_Progress-Bar.png in Resources */,
+				F4975DC01B2E71FC0099D16E /* Platypus.xib in Resources */,
+				F44A77441C1882DA003CCA7A /* UninstallCommandLineTool.sh in Resources */,
+				F45B1F201FF5617500A935D7 /* Interpreter_Csh.png in Resources */,
+				F45B1F161FF5617500A935D7 /* Interpreter_Shell.png in Resources */,
+				F471ED22122DF2D6001F4761 /* Credits.html in Resources */,
+				F45B1F1F1FF5617500A935D7 /* Interpreter_Bash.png in Resources */,
+				F45B1F2F1FF5618000A935D7 /* InterfaceType_Web-View.png in Resources */,
+				F4D581B81C449568005FA6AC /* platypus.1 in Resources */,
+				F4975DC11B2E71FC0099D16E /* ShellCommandWindow.xib in Resources */,
+				F4975DC21B2E71FC0099D16E /* SyntaxChecker.xib in Resources */,
+				F45B1F2B1FF5618000A935D7 /* InterfaceType_Status-Menu.png in Resources */,
+				F45B1F2D1FF5618000A935D7 /* InterfaceType_Text-Window.png in Resources */,
+				F4F14CBC1C662A4D002A2402 /* make_examples.pl in Resources */,
+				F45B1F301FF5618000A935D7 /* InterfaceType_None.png in Resources */,
+				F45B1F1D1FF5617500A935D7 /* Interpreter_Env.png in Resources */,
+				F45B1F1B1FF5617500A935D7 /* Interpreter_Tcsh.png in Resources */,
+				F46EF85113C3F36900E4C0E4 /* Examples in Resources */,
+				F45B1F231FF5617500A935D7 /* Interpreter_Ruby.png in Resources */,
+				F45B1F191FF5617500A935D7 /* Interpreter_Python.png in Resources */,
+				F4975DBE1B2E71FC0099D16E /* Editor.xib in Resources */,
+				F45B1F1A1FF5617500A935D7 /* Interpreter_Expect.png in Resources */,
+				F445EA7B14FAB93300DCCDB3 /* dsa_pub.pem in Resources */,
+				F45B1F221FF5617500A935D7 /* Interpreter_Zsh.png in Resources */,
+				F4FB338114FBFC7C00BAECEB /* License.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48B773D11F7661C00351575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F44A77501C1887CC003CCA7A /* script in Resources */,
+				F44A774D1C1887CC003CCA7A /* AppSettings.plist in Resources */,
+				F44A774F1C1887CC003CCA7A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F40B227E1B28F331003C05ED /* Run Script To Extract ScriptExec binary from ScriptExec Application Bundle */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"",
+			);
+			name = "Run Script To Extract ScriptExec binary from ScriptExec Application Bundle";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#/bin/sh\n#\n# Since XCode won't let us copy files from\n# within application bundles in the Copy Files\n# phase, we instead copy the ScriptExec.app bundle over\n# in its entirety and then copy the binary within into\n# Resources ... and subsequently delete app bundle\n\nRESOURCES_DIR=\"${TARGET_BUILD_DIR}/Platypus.app/Contents/Resources\"\n\necho \"Moving ScriptExec binary\"\nSCRIPT_EXEC_APP_PATH=\"${RESOURCES_DIR}/ScriptExec.app\"\nSCRIPT_EXEC_BIN_PATH=\"${SCRIPT_EXEC_APP_PATH}/Contents/MacOS/ScriptExec\"\nrm \"${RESOURCES_DIR}/ScriptExec\" &> /dev/null\nmv \"${SCRIPT_EXEC_BIN_PATH}\" \"${RESOURCES_DIR}/ScriptExec\"\n\necho \"Moving ScriptExec nib\"\nSCRIPT_EXEC_NIB_PATH=\"${SCRIPT_EXEC_APP_PATH}/Contents/Resources/MainMenu.nib\"\nrm -r \"${RESOURCES_DIR}/MainMenu.nib\" &> /dev/null\nmv \"${SCRIPT_EXEC_NIB_PATH}\" \"${RESOURCES_DIR}/MainMenu.nib\"\n\necho \"Removing ScriptExec.app\"\nrm -r \"${SCRIPT_EXEC_APP_PATH}\"\n\n#gzip ${TARGET_BUILD_DIR}/Platypus.app/Contents/Resources/platypus.1\n";
+		};
+		F42622251C03B0DD0052BA33 /* Run Script To Set CFBundleVersion to Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script To Set CFBundleVersion to Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\nBUILD_NUMBER=`git rev-list HEAD | wc -l`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $BUILD_NUMBER\" \"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nif [ \"$?\" -ne 0 ] ; then\necho \"warning:Error incrementing CFBundleVersion\"\nfi";
+		};
+		F4F14CBA1C640B29002A2402 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/bin/perl make_examples.pl\nif test $? -eq 0 ; then\n    open ExampleApps\nelse\n    exit $?\nfi";
+		};
+		F4FB337514FBDAD500BAECEB /* Run Script to Create Man Page HTML document */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/CommandLineTool/platypus.1",
+			);
+			name = "Run Script to Create Man Page HTML document";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Create HTML document from man page\n/usr/bin/man CommandLineTool/man/platypus.1 | CommandLineTool/man/cat2html/cat2html > CommandLineTool/man/platypus.man.html\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4975DB61B2E71EE0099D16E /* SuffixTypeListController.m in Sources */,
+				F4AB186F1BE1908100B83A95 /* NSBundle+Templates.m in Sources */,
+				F45B1EFC1FF560D800A935D7 /* NSTextView+JSDExtensions.m in Sources */,
+				F4975D751B2E09310099D16E /* STPrivilegedTask.m in Sources */,
+				F4975DB41B2E71EE0099D16E /* ShellCommandController.m in Sources */,
+				F4975DAB1B2E71EE0099D16E /* BundledFilesController.m in Sources */,
+				F4D0F2311C1DCEEE0065AD25 /* NSResponderNotifyingTableView.m in Sources */,
+				F4975DAA1B2E71EE0099D16E /* ArgsController.m in Sources */,
+				F4975D8B1B2E71B80099D16E /* main.m in Sources */,
+				F4975DB51B2E71EE0099D16E /* StatusItemSettingsController.m in Sources */,
+				F4975DB11B2E71EE0099D16E /* PreferencesController.m in Sources */,
+				F4975DB21B2E71EE0099D16E /* ProfilesController.m in Sources */,
+				F4051DA11C1B5AF900587F1F /* Common.m in Sources */,
+				F4ECE5891E5F04A4008CC395 /* UriSchemesListController.m in Sources */,
+				F45B1F331FF561E700A935D7 /* NSTask+Description.m in Sources */,
+				F45B1F021FF560FB00A935D7 /* IconFamily.m in Sources */,
+				F45B1EFB1FF560D800A935D7 /* NoodleLineNumberMarker.m in Sources */,
+				F4975DAF1B2E71EE0099D16E /* PlatypusWindowController.m in Sources */,
+				F4975DAE1B2E71EE0099D16E /* IconController.m in Sources */,
+				F4AB186C1BE182FA00B83A95 /* Alerts.m in Sources */,
+				F4975DB81B2E71EE0099D16E /* TextSettingsController.m in Sources */,
+				F4975DB71B2E71EE0099D16E /* SyntaxCheckerController.m in Sources */,
+				F4975D791B2E09450099D16E /* STPathTextField.m in Sources */,
+				F4975DAC1B2E71EE0099D16E /* DropSettingsController.m in Sources */,
+				F4FE739911F792D5005FC23A /* PlatypusAppSpec.m in Sources */,
+				F44EFF36122971BE00CAC9C2 /* NSColor+HexTools.m in Sources */,
+				F4975DAD1B2E71EE0099D16E /* EditorController.m in Sources */,
+				F4975D711B2E09280099D16E /* NSWorkspace+Additions.m in Sources */,
+				F4F2F3BA1BF96C5C00FE463C /* VDKQueue.m in Sources */,
+				F4051DA91C1C812600587F1F /* STReverseDNSTextField.m in Sources */,
+				F48269831BCAF1D800169D8B /* UniformTypeListController.m in Sources */,
+				F4C19A851BD1BFAB00F411BD /* STDragImageView.m in Sources */,
+				F45B1EFA1FF560D800A935D7 /* NoodleLineNumberView.m in Sources */,
+				F482697F1BCAE1EE00169D8B /* TypeListController.m in Sources */,
+				F45B1F031FF560FB00A935D7 /* NSString+CarbonFSRefCreation.m in Sources */,
+				F48B1EE017935BBC007DA173 /* PlatypusScriptAnalyser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F48B773E11F7661C00351575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48B7B9511F766E600351575 /* main.m in Sources */,
+				F48B7B9611F766E600351575 /* ScriptExecController.m in Sources */,
+				F4051D9F1C1B5AF900587F1F /* Common.m in Sources */,
+				F44EFF0612296F3700CAC9C2 /* NSColor+HexTools.m in Sources */,
+				F4AF785D14D1E5F200544C1B /* STDragWebView.m in Sources */,
+				F4B6802B1E58B63900F788CD /* PlatypusScriptAnalyser.m in Sources */,
+				F4975D741B2E09310099D16E /* STPrivilegedTask.m in Sources */,
+				F4AB186B1BE182FA00B83A95 /* Alerts.m in Sources */,
+				F45B1F341FF56AE500A935D7 /* NSTask+Description.m in Sources */,
+				F4975D701B2E09280099D16E /* NSWorkspace+Additions.m in Sources */,
+				F4AB189A1BED3A0B00B83A95 /* ScriptExecJob.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E1F6F911F758FB007EE2E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43142B11C03C749004EEF8C /* NSWorkspace+Additions.m in Sources */,
+				F43142B01C03C742004EEF8C /* PlatypusScriptAnalyser.m in Sources */,
+				F4051DA01C1B5AF900587F1F /* Common.m in Sources */,
+				F4FE739A11F792D5005FC23A /* PlatypusAppSpec.m in Sources */,
+				F4FE747B11F79399005FC23A /* platypus_clt.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F40B22771B28D761003C05ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F48B774011F7661C00351575 /* ScriptExec */;
+			targetProxy = F40B22761B28D761003C05ED /* PBXContainerItemProxy */;
+		};
+		F40B22791B28D763003C05ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4E1F6FB11F758FB007EE2E3 /* platypus */;
+			targetProxy = F40B22781B28D763003C05ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F41B217E085CD8FF00B63B0D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GENERATE_PKGINFO_FILE = NO;
+				GENERATE_PROFILING_CODE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "Application/Resources/Platypus-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-Wl,-rpath,@loader_path/../Frameworks",
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.Platypus;
+				PRODUCT_NAME = Platypus;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SECTORDER_FLAGS = "";
+				SEPARATE_STRIP = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = NO;
+				WARNING_CFLAGS = "-Wno-gnu";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Development;
+		};
+		F41B217F085CD8FF00B63B0D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GCC_THREADSAFE_STATICS = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GENERATE_PKGINFO_FILE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "Application/Resources/Platypus-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-Wl,-rpath,@loader_path/../Frameworks",
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.Platypus;
+				PRODUCT_NAME = Platypus;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SECTORDER_FLAGS = "";
+				SEPARATE_STRIP = YES;
+				STRINGS_FILE_OUTPUT_ENCODING = binary;
+				STRIP_INSTALLED_PRODUCT = YES;
+				VALIDATE_PRODUCT = YES;
+				WARNING_CFLAGS = "-Wno-gnu";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Deployment;
+		};
+		F41B2180085CD8FF00B63B0D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_TEMP_DIR = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "Application/Resources/Platypus-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-Wl,-rpath,@loader_path/../Frameworks",
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.Platypus;
+				PRODUCT_NAME = Platypus;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SECTORDER_FLAGS = "";
+				SEPARATE_STRIP = YES;
+				VALIDATE_PRODUCT = NO;
+				WARNING_CFLAGS = "-Wno-gnu";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Default;
+		};
+		F41B2182085CD8FF00B63B0D /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CLANG_WARN_ASSIGN_ENUM = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_STRICT_ALIASING = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBC_FLATTEN_NIBS = NO;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INFOPLIST_PREPROCESS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PLIST_FILE_OUTPUT_FORMAT = XML;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
+				SYMROOT = build;
+				VALID_ARCHS = x86_64;
+			};
+			name = Development;
+		};
+		F41B2183085CD8FF00B63B0D /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_VARIANTS = normal;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CLANG_WARN_ASSIGN_ENUM = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBC_FLATTEN_NIBS = YES;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INFOPLIST_PREPROCESS = YES;
+				LINKER_DISPLAYS_MANGLED_NAMES = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PLIST_FILE_OUTPUT_FORMAT = binary;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = binary;
+				SYMROOT = build;
+				VALID_ARCHS = x86_64;
+			};
+			name = Deployment;
+		};
+		F41B2184085CD8FF00B63B0D /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				CLANG_WARN_ASSIGN_ENUM = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				CONFIGURATION_TEMP_DIR = "";
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_STRICT_ALIASING = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBC_FLATTEN_NIBS = NO;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INFOPLIST_PREPROCESS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PLIST_FILE_OUTPUT_FORMAT = binary;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = macosx;
+				STRINGS_FILE_OUTPUT_ENCODING = binary;
+				SYMROOT = build;
+				VALID_ARCHS = x86_64;
+			};
+			name = Default;
+		};
+		F48B774411F7661D00351575 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = PlatypusDefaultIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXCLUDED_SOURCE_FILE_NAMES = "";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GENERATE_PKGINFO_FILE = NO;
+				IBC_FLATTEN_NIBS = NO;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "ScriptExec/Resources/ScriptExec-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INFOPLIST_OUTPUT_FORMAT = xml;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PLIST_FILE_OUTPUT_FORMAT = xml;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.ScriptExec;
+				PRODUCT_NAME = ScriptExec;
+			};
+			name = Development;
+		};
+		F48B774511F7661D00351575 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = PlatypusDefaultIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXCLUDED_SOURCE_FILE_NAMES = "PlatypusScriptAnalyser.*";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GCC_UNROLL_LOOPS = NO;
+				GENERATE_PKGINFO_FILE = NO;
+				IBC_FLATTEN_NIBS = NO;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "ScriptExec/Resources/ScriptExec-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PLIST_FILE_OUTPUT_FORMAT = binary;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.ScriptExec;
+				PRODUCT_NAME = ScriptExec;
+				STRIP_INSTALLED_PRODUCT = YES;
+			};
+			name = Deployment;
+		};
+		F48B774611F7661D00351575 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = PlatypusDefaultIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXCLUDED_SOURCE_FILE_NAMES = "";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_ENABLE_PASCAL_STRINGS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				GENERATE_PKGINFO_FILE = NO;
+				IBC_FLATTEN_NIBS = NO;
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "ScriptExec/Resources/ScriptExec-Info.plist";
+				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.ScriptExec;
+				PRODUCT_NAME = ScriptExec;
+			};
+			name = Default;
+		};
+		F4E1F6FE11F758FC007EE2E3 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				INSTALL_PATH = /;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PRODUCT_NAME = platypus_clt;
+				VALID_ARCHS = x86_64;
+			};
+			name = Development;
+		};
+		F4E1F6FF11F758FC007EE2E3 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				INSTALL_PATH = /;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PRODUCT_NAME = platypus_clt;
+				STRIP_INSTALLED_PRODUCT = YES;
+				VALID_ARCHS = x86_64;
+			};
+			name = Deployment;
+		};
+		F4E1F70011F758FC007EE2E3 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
+				INSTALL_PATH = /;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-U",
+					"-Xlinker",
+					_objc_readClassPair,
+				);
+				PRODUCT_NAME = platypus_clt;
+				VALID_ARCHS = x86_64;
+			};
+			name = Default;
+		};
+		F4F14CB71C640B1E002A2402 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Development;
+		};
+		F4F14CB81C640B1E002A2402 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Deployment;
+		};
+		F4F14CB91C640B1E002A2402 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F41B217D085CD8FF00B63B0D /* Build configuration list for PBXNativeTarget "Platypus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41B217E085CD8FF00B63B0D /* Development */,
+				F41B217F085CD8FF00B63B0D /* Deployment */,
+				F41B2180085CD8FF00B63B0D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		F41B2181085CD8FF00B63B0D /* Build configuration list for PBXProject "Platypus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F41B2182085CD8FF00B63B0D /* Development */,
+				F41B2183085CD8FF00B63B0D /* Deployment */,
+				F41B2184085CD8FF00B63B0D /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		F48B774711F7661D00351575 /* Build configuration list for PBXNativeTarget "ScriptExec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48B774411F7661D00351575 /* Development */,
+				F48B774511F7661D00351575 /* Deployment */,
+				F48B774611F7661D00351575 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		F4E1F70611F75921007EE2E3 /* Build configuration list for PBXNativeTarget "platypus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4E1F6FE11F758FC007EE2E3 /* Development */,
+				F4E1F6FF11F758FC007EE2E3 /* Deployment */,
+				F4E1F70011F758FC007EE2E3 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		F4F14CB61C640B1E002A2402 /* Build configuration list for PBXAggregateTarget "Examples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4F14CB71C640B1E002A2402 /* Development */,
+				F4F14CB81C640B1E002A2402 /* Deployment */,
+				F4F14CB91C640B1E002A2402 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
